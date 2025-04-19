@@ -1,7 +1,8 @@
-const numeros = ["num1","num2","num3","num4","num5"]
-console.log("numeros:", numeros);
-console.log("cantidad de numeros:",numeros.lenght);
-console.log("lista de elementos:",numeros);
-for (let numeros = 0; numeros <=numeros.lenght; i++) {
-    console.log(numeros[i]);
+const listanumeros=[1,2,3,4,5] // asignacion de array
+console.log(listanumeros) // imprime la lista de numeros
+function sumaArray(array) {
+    return array.reduce((acc,num) => acc +num, 0); // realizacion de la suma de elementos
 }
+let resultado = sumaArray(listanumeros)
+// asigna la funcion a la variable resultado
+console.log(resultado) // imprime resultado
